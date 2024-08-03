@@ -1,0 +1,18 @@
+THE SCRIPT TAG (<script></script>)
+1) Java script program can be inserted almost any where into an HTML document using the script tag.
+2) Code is automatically executed when the browser processes the tag.
+MARKUPS:
+1) The <script> has few attributes that are rarely used nowadays but can still be found in old code.
+2) TYPE attribute: <script type="...">
+3) LANGUAGE attribute: <script language="...">
+ HTML 4, required a script to have a type, Usually it was type="text/javascript".  Language attribute shown the language of the script. Now Java script is the default language so there is no need to use them.
+
+EXTERNAL SCRIPT:
+Only the simplest scripts are put into HTML.
+If we have a lot of JAVA Script code, we can put into a separate file.
+Script files are attached to HTML with the src attribute:
+
+to attached several scripts use multiple tags.
+If src is set, the script cotent is ignored.
+
+

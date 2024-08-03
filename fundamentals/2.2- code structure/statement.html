@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            2.2 CODE STRUCTURE
+        </title>
+    </head>
+
+
+    <body style="background-color: beige;">
+        <h1 style="border: darkgray; color: darkblue;">
+            CODE STRUCTURE
+        </h1>
+        <p>
+            The first thing, We'll study is the building blocks of code.
+        </p>
+
+        <h2 style="background-color: skyblue;">STATEMENTS</h2>
+        <p>
+            Statements are syntax constructs and commands that perform actions.<br/>
+            Statements can be separated with a semicolon.<br/>
+            Usually, statements are written in separate lines to make the code more readable.<br/>
+        </p>
+        <hr/>
+        <h2 style="background-color: skyblue;">
+            SEMICOLONS <image src="C:\Users\Hp\Pictures\Screenshots\Screenshot 2024-08-03 144931.gif" width="10" height="30"></image>
+        </h2>
+        <p>
+            Semicolon may be omitted in most cases when a line break exist.<br/>
+            Java Script interprets the line break as an <em>"implicit"</em> semicolon.<br/>
+            This is called <strong><em>"Automatic Semicolon Insertion"</em></strong>.
+        </p>
+        <h4 style="background-color: rgb(216, 249, 114);">
+            In most cases, A new line implies a semicolon. But <em>"in most cases"</em> does not means always.
+        </h4>
+        <p>
+            There are cases when a new line does not means a semicolon.<br/>
+            alert(2 +<br/>3<br/>+ 5)<br/>
+            It is intuitively obvious that it is an incomplete expression, So a semicolon there would be incorrect.<br/>
+            That works as intended.
+        </p>
+        <h4  style="background-color: rgb(216, 249, 114);">
+            But there are situations where Java Script <em>"fails"</em> to assume a semicolon where is really needed.
+        </h4>
+        <p>
+            Errors which occur in such cases are quite hard to find and fix.<br/>
+            alert("Hello")<br/>[1, 2].foreach(alert);<br/>
+            Java Script does not assume semicolon before square brackets[...], So, the code is treated as a single statement.(there's an error)
+        </p>
+        <p>
+            We recommend putting semicolons in between statements even if they are separated by a new lines
+        </p>
+        <h2 style="background-color: skyblue;">
+            COMMENTS
+        </h2>
+        <P>
+            Comments describe what the code does and why.<br/>
+            Comments can be put into any place of script, engine simply ignores them.
+        </P>
+        <h4  style="background-color: rgb(216, 249, 114);">
+            One-line comment start with two forward slash characters <image src="C:\Users\Hp\Pictures\Screenshots\Screenshot 2024-08-03 154422.gif" width="25" height="30"></image>
+        </h4>
+        <h4 style="background-color: rgb(216, 249, 114);">
+            Multiline comments start with a forward slash and an asterisk /* and end with an asterisk and a forward slash */.
+        </h4>
+        <p>
+            The content of comments is ignored, so if we put code inside /* … */, it won’t execute.
+
+            Sometimes it can be handy to temporarily disable a part of code:
+        </p>
+        <h5>
+            Nested comments are not supported!.
+        </h5>
+
+    </body>
+</html>
